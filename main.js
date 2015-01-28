@@ -13,10 +13,10 @@ var congfigSettings = {
 
 var mockPost = {
     layout: "blog",
-    published: "false",
-    title: "orale orale",
+    published: "true",
+    title: "english test blog",
     category: "blog",
-    language: "arabic",
+    language: "english",
     comments: "true",
     tags: ["tag1", "tag2"],
     author: "IFPRI",
@@ -32,8 +32,8 @@ var mockPost = {
 //});
 
 var github = new Github({
-    token: "ce7632587d588ff261c27f84232fbae07112d6df",
-    auth: "oauth"
+    token: githubCreds.token,
+    auth: githubCreds.auth
 });
 
 var repo = github.getRepo(congfigSettings.ACCUSR, congfigSettings.REPO);
@@ -42,7 +42,7 @@ function init(){
 
     getListOfMDFiles();
 
-    writeFileToGithub();
+//    writeFileToGithub();
 
 }
 
@@ -82,7 +82,7 @@ function writeFileToGithub(title, content){
 
     var postdata = buildPost(title, content);
 
-    console.log(postdata);
+//    console.log(postdata);
 
     repo.write(congfigSettings.BRANCH, congfigSettings.PATH + "/" + postdata.filename, postdata.body, 'test for write files', function(err) {
 
@@ -100,21 +100,35 @@ function writeFileToGithub(title, content){
 writeFileToGithub(mockPost.title, mockPost.content)
 
 function formatTtitle(text) {
+    var d = new Date();
+
+    var year = d.getFullYear();
+    var month = ("0" + (d.getMonth() + 1)).slice(-2)
+    var day = d.getDay();
+
+    var postStampDate = year + " " + month + " " + day;
+
+    text = postStampDate + " " + text;
+
         return text.replace(/\s+/g, '-').toLowerCase();
     }
 
-
-function JekyllBuilder() {
+function builderYMAL() {
     var YAML_FRONT_MATTER = '---\n' +
-        'layout: blog\n' +
+        'layout: '+ mockPost.layout + '\n' +
+        'published: '+ mockPost.published + '\n' +
         'title: %title\n' +
+        'category: '+ mockPost.category + '\n' +
+        'language: '+ mockPost.language + '\n' +
+        'comments: '+ mockPost.comments + '\n' +
+        'splash: '+ mockPost.splash + '\n' +
         '---\n\n';
     return YAML_FRONT_MATTER;
 }
 
 function buildPost(title, data) {
     filename = formatTtitle(title);
-    var getYMAL = JekyllBuilder();
+    var getYMAL = builderYMAL();
     yaml = getYMAL.replace('%title', title);
 
     post = {

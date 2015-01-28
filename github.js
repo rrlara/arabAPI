@@ -375,7 +375,7 @@
         } else {
           	content = {
               "content": btoa(String.fromCharCode.apply(null, new Uint8Array(content))),
-              "encoding": "base64"
+              "encoding": "utf-8|base64"
             };
           }
 
@@ -610,9 +610,10 @@
           if (err && err.error!=404) return cb(err);
           _request("PUT", repoPath + "/contents/" + path, {
             message: message,
-            content: btoa(content),
+            // content: btoa(content),
+            content: btoa(unescape(encodeURIComponent(content))),
             branch: branch,
-            sha: sha
+            sha: sha,
           }, cb);
         });
       };

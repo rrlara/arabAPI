@@ -1,0 +1,681 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/renerodriguez/Sites/arabAPI',
+6 verbose install   [ 'atob', 'btoa', 'underscore', 'xmlhttprequest', 'jshint', 'tape' ] ]
+7 info preinstall github-api@0.10.3
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'atob@^1.1.2', null ]
+10 verbose cache add name=undefined spec="atob@^1.1.2" args=["atob@^1.1.2",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'atob@^1.1.2',
+11 verbose parsed url   path: 'atob@^1.1.2',
+11 verbose parsed url   href: 'atob@^1.1.2' }
+12 verbose cache add [ 'btoa@^1.1.2', null ]
+13 verbose cache add name=undefined spec="btoa@^1.1.2" args=["btoa@^1.1.2",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'btoa@^1.1.2',
+14 verbose parsed url   path: 'btoa@^1.1.2',
+14 verbose parsed url   href: 'btoa@^1.1.2' }
+15 verbose cache add [ 'underscore@~1.6.0', null ]
+16 verbose cache add name=undefined spec="underscore@~1.6.0" args=["underscore@~1.6.0",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'underscore@~1.6.0',
+17 verbose parsed url   path: 'underscore@~1.6.0',
+17 verbose parsed url   href: 'underscore@~1.6.0' }
+18 verbose cache add [ 'xmlhttprequest@~1.6.0', null ]
+19 verbose cache add name=undefined spec="xmlhttprequest@~1.6.0" args=["xmlhttprequest@~1.6.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'xmlhttprequest@~1.6.0',
+20 verbose parsed url   path: 'xmlhttprequest@~1.6.0',
+20 verbose parsed url   href: 'xmlhttprequest@~1.6.0' }
+21 verbose cache add name="atob" spec="^1.1.2" args=["atob","^1.1.2"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '^1.1.2',
+22 verbose parsed url   path: '^1.1.2',
+22 verbose parsed url   href: '^1.1.2' }
+23 verbose addNamed [ 'atob', '^1.1.2' ]
+24 verbose addNamed [ null, '>=1.1.2-0 <2.0.0-0' ]
+25 verbose cache add name="btoa" spec="^1.1.2" args=["btoa","^1.1.2"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '^1.1.2',
+26 verbose parsed url   path: '^1.1.2',
+26 verbose parsed url   href: '^1.1.2' }
+27 verbose addNamed [ 'btoa', '^1.1.2' ]
+28 verbose addNamed [ null, '>=1.1.2-0 <2.0.0-0' ]
+29 verbose cache add name="underscore" spec="~1.6.0" args=["underscore","~1.6.0"]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: '~1.6.0',
+30 verbose parsed url   path: '~1.6.0',
+30 verbose parsed url   href: '~1.6.0' }
+31 verbose addNamed [ 'underscore', '~1.6.0' ]
+32 verbose addNamed [ null, '>=1.6.0-0 <1.7.0-0' ]
+33 verbose cache add [ 'jshint@^2.5.8', null ]
+34 verbose cache add name=undefined spec="jshint@^2.5.8" args=["jshint@^2.5.8",null]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: 'jshint@^2.5.8',
+35 verbose parsed url   path: 'jshint@^2.5.8',
+35 verbose parsed url   href: 'jshint@^2.5.8' }
+36 verbose cache add [ 'tape@^3.0.3', null ]
+37 verbose cache add name=undefined spec="tape@^3.0.3" args=["tape@^3.0.3",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'tape@^3.0.3',
+38 verbose parsed url   path: 'tape@^3.0.3',
+38 verbose parsed url   href: 'tape@^3.0.3' }
+39 verbose cache add name="xmlhttprequest" spec="~1.6.0" args=["xmlhttprequest","~1.6.0"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '~1.6.0',
+40 verbose parsed url   path: '~1.6.0',
+40 verbose parsed url   href: '~1.6.0' }
+41 verbose addNamed [ 'xmlhttprequest', '~1.6.0' ]
+42 verbose addNamed [ null, '>=1.6.0-0 <1.7.0-0' ]
+43 silly lockFile 5e8cb7ad-atob-1-1-2 atob@^1.1.2
+44 verbose lock atob@^1.1.2 /Users/renerodriguez/.npm/5e8cb7ad-atob-1-1-2.lock
+45 silly lockFile 6bc717ae-btoa-1-1-2 btoa@^1.1.2
+46 verbose lock btoa@^1.1.2 /Users/renerodriguez/.npm/6bc717ae-btoa-1-1-2.lock
+47 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+48 verbose lock underscore@~1.6.0 /Users/renerodriguez/.npm/03145d98-underscore-1-6-0.lock
+49 silly lockFile c1958a18-xmlhttprequest-1-6-0 xmlhttprequest@~1.6.0
+50 verbose lock xmlhttprequest@~1.6.0 /Users/renerodriguez/.npm/c1958a18-xmlhttprequest-1-6-0.lock
+51 verbose cache add name="jshint" spec="^2.5.8" args=["jshint","^2.5.8"]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: '^2.5.8',
+52 verbose parsed url   path: '^2.5.8',
+52 verbose parsed url   href: '^2.5.8' }
+53 verbose addNamed [ 'jshint', '^2.5.8' ]
+54 verbose addNamed [ null, '>=2.5.8-0 <3.0.0-0' ]
+55 silly lockFile c93a3f0f-jshint-2-5-8 jshint@^2.5.8
+56 verbose lock jshint@^2.5.8 /Users/renerodriguez/.npm/c93a3f0f-jshint-2-5-8.lock
+57 verbose cache add name="tape" spec="^3.0.3" args=["tape","^3.0.3"]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: '^3.0.3',
+58 verbose parsed url   path: '^3.0.3',
+58 verbose parsed url   href: '^3.0.3' }
+59 verbose addNamed [ 'tape', '^3.0.3' ]
+60 verbose addNamed [ null, '>=3.0.3-0 <4.0.0-0' ]
+61 silly lockFile dfc2fec7-tape-3-0-3 tape@^3.0.3
+62 verbose lock tape@^3.0.3 /Users/renerodriguez/.npm/dfc2fec7-tape-3-0-3.lock
+63 silly addNameRange { name: 'atob', range: '>=1.1.2-0 <2.0.0-0', hasData: false }
+64 silly addNameRange { name: 'xmlhttprequest',
+64 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+64 silly addNameRange   hasData: false }
+65 silly addNameRange { name: 'btoa', range: '>=1.1.2-0 <2.0.0-0', hasData: false }
+66 silly addNameRange { name: 'underscore',
+66 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+66 silly addNameRange   hasData: false }
+67 silly addNameRange { name: 'jshint', range: '>=2.5.8-0 <3.0.0-0', hasData: false }
+68 silly addNameRange { name: 'tape', range: '>=3.0.3-0 <4.0.0-0', hasData: false }
+69 verbose request where is /atob
+70 verbose request registry https://registry.npmjs.org/
+71 verbose request id dc160bbd24c3b097
+72 verbose url raw /atob
+73 verbose url resolving [ 'https://registry.npmjs.org/', './atob' ]
+74 verbose url resolved https://registry.npmjs.org/atob
+75 verbose request where is https://registry.npmjs.org/atob
+76 info trying registry request attempt 1 at 16:18:34
+77 http GET https://registry.npmjs.org/atob
+78 verbose request where is /btoa
+79 verbose request registry https://registry.npmjs.org/
+80 verbose url raw /btoa
+81 verbose url resolving [ 'https://registry.npmjs.org/', './btoa' ]
+82 verbose url resolved https://registry.npmjs.org/btoa
+83 verbose request where is https://registry.npmjs.org/btoa
+84 info trying registry request attempt 1 at 16:18:34
+85 http GET https://registry.npmjs.org/btoa
+86 verbose request where is /jshint
+87 verbose request registry https://registry.npmjs.org/
+88 verbose url raw /jshint
+89 verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+90 verbose url resolved https://registry.npmjs.org/jshint
+91 verbose request where is https://registry.npmjs.org/jshint
+92 info trying registry request attempt 1 at 16:18:34
+93 http GET https://registry.npmjs.org/jshint
+94 verbose request where is /tape
+95 verbose request registry https://registry.npmjs.org/
+96 verbose url raw /tape
+97 verbose url resolving [ 'https://registry.npmjs.org/', './tape' ]
+98 verbose url resolved https://registry.npmjs.org/tape
+99 verbose request where is https://registry.npmjs.org/tape
+100 info trying registry request attempt 1 at 16:18:34
+101 http GET https://registry.npmjs.org/tape
+102 verbose request where is /xmlhttprequest
+103 verbose request registry https://registry.npmjs.org/
+104 verbose url raw /xmlhttprequest
+105 verbose url resolving [ 'https://registry.npmjs.org/', './xmlhttprequest' ]
+106 verbose url resolved https://registry.npmjs.org/xmlhttprequest
+107 verbose request where is https://registry.npmjs.org/xmlhttprequest
+108 info trying registry request attempt 1 at 16:18:34
+109 verbose etag "HM8UZ7XDB3PXR76DQ2U4KQEE"
+110 http GET https://registry.npmjs.org/xmlhttprequest
+111 verbose request where is /underscore
+112 verbose request registry https://registry.npmjs.org/
+113 verbose url raw /underscore
+114 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+115 verbose url resolved https://registry.npmjs.org/underscore
+116 verbose request where is https://registry.npmjs.org/underscore
+117 info trying registry request attempt 1 at 16:18:34
+118 verbose etag "13QECXWDN25ER11QSUIVETWYN"
+119 http GET https://registry.npmjs.org/underscore
+120 http 200 https://registry.npmjs.org/btoa
+121 silly registry.get cb [ 200,
+121 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+121 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+121 silly registry.get     etag: '"60VT6PD2MW9VRAK1ADBQKVMY8"',
+121 silly registry.get     'content-type': 'application/json',
+121 silly registry.get     'cache-control': 'max-age=60',
+121 silly registry.get     'content-length': '5869',
+121 silly registry.get     'accept-ranges': 'bytes',
+121 silly registry.get     via: '1.1 varnish',
+121 silly registry.get     age: '14',
+121 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
+121 silly registry.get     'x-cache': 'HIT',
+121 silly registry.get     'x-cache-hits': '1',
+121 silly registry.get     'x-timer': 'S1422404314.352273,VS0,VE0',
+121 silly registry.get     vary: 'Accept',
+121 silly registry.get     'keep-alive': 'timeout=10, max=50',
+121 silly registry.get     connection: 'Keep-Alive' } ]
+122 http 200 https://registry.npmjs.org/xmlhttprequest
+123 silly registry.get cb [ 200,
+123 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+123 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+123 silly registry.get     etag: '"D84SFNNX8PMAJGH9G9S2DBGXO"',
+123 silly registry.get     'content-type': 'application/json',
+123 silly registry.get     'cache-control': 'max-age=60',
+123 silly registry.get     'content-length': '11568',
+123 silly registry.get     'accept-ranges': 'bytes',
+123 silly registry.get     via: '1.1 varnish',
+123 silly registry.get     age: '19',
+123 silly registry.get     'x-served-by': 'cache-sjc3124-SJC',
+123 silly registry.get     'x-cache': 'HIT',
+123 silly registry.get     'x-cache-hits': '1',
+123 silly registry.get     'x-timer': 'S1422404314.357378,VS0,VE0',
+123 silly registry.get     vary: 'Accept',
+123 silly registry.get     'keep-alive': 'timeout=10, max=50',
+123 silly registry.get     connection: 'Keep-Alive' } ]
+124 silly addNameRange number 2 { name: 'xmlhttprequest',
+124 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+124 silly addNameRange   hasData: true }
+125 silly addNameRange versions [ 'xmlhttprequest',
+125 silly addNameRange   [ '1.0.0',
+125 silly addNameRange     '1.2.0',
+125 silly addNameRange     '1.2.1',
+125 silly addNameRange     '1.2.2',
+125 silly addNameRange     '1.3.0',
+125 silly addNameRange     '1.4.0',
+125 silly addNameRange     '1.4.2',
+125 silly addNameRange     '1.5.0',
+125 silly addNameRange     '1.6.0',
+125 silly addNameRange     '1.7.0' ] ]
+126 verbose addNamed [ 'xmlhttprequest', '1.6.0' ]
+127 verbose addNamed [ '1.6.0', '1.6.0' ]
+128 silly lockFile 3c7905a4-xmlhttprequest-1-6-0 xmlhttprequest@1.6.0
+129 verbose lock xmlhttprequest@1.6.0 /Users/renerodriguez/.npm/3c7905a4-xmlhttprequest-1-6-0.lock
+130 silly addNameRange number 2 { name: 'btoa', range: '>=1.1.2-0 <2.0.0-0', hasData: true }
+131 silly addNameRange versions [ 'btoa', [ '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2' ] ]
+132 verbose addNamed [ 'btoa', '1.1.2' ]
+133 verbose addNamed [ '1.1.2', '1.1.2' ]
+134 silly lockFile f1235312-btoa-1-1-2 btoa@1.1.2
+135 verbose lock btoa@1.1.2 /Users/renerodriguez/.npm/f1235312-btoa-1-1-2.lock
+136 silly lockFile eb661706-ry-npmjs-org-btoa-btoa-1-1-2-tgz https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+137 verbose lock https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz /Users/renerodriguez/.npm/eb661706-ry-npmjs-org-btoa-btoa-1-1-2-tgz.lock
+138 verbose addRemoteTarball [ 'https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz',
+138 verbose addRemoteTarball   '3e40b81663f81d2dd6596a4cb714a8dc16cfabe0' ]
+139 silly lockFile 3c7905a4-xmlhttprequest-1-6-0 xmlhttprequest@1.6.0
+140 silly lockFile 3c7905a4-xmlhttprequest-1-6-0 xmlhttprequest@1.6.0
+141 silly lockFile c1958a18-xmlhttprequest-1-6-0 xmlhttprequest@~1.6.0
+142 silly lockFile c1958a18-xmlhttprequest-1-6-0 xmlhttprequest@~1.6.0
+143 info retry fetch attempt 1 at 16:18:34
+144 verbose fetch to= /var/folders/6w/n98zn4k15ml6ctzt3dc3085h0000gn/T/npm-11873-kIK110-Z/registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+145 http GET https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+146 http 200 https://registry.npmjs.org/underscore
+147 silly registry.get cb [ 200,
+147 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+147 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+147 silly registry.get     etag: '"20IO9OQJQE0QKOXYTIHPBZ1SU"',
+147 silly registry.get     'content-type': 'application/json',
+147 silly registry.get     'cache-control': 'max-age=60',
+147 silly registry.get     'content-length': '33757',
+147 silly registry.get     'accept-ranges': 'bytes',
+147 silly registry.get     via: '1.1 varnish',
+147 silly registry.get     age: '32',
+147 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
+147 silly registry.get     'x-cache': 'HIT',
+147 silly registry.get     'x-cache-hits': '2',
+147 silly registry.get     'x-timer': 'S1422404314.380249,VS0,VE0',
+147 silly registry.get     vary: 'Accept',
+147 silly registry.get     'keep-alive': 'timeout=10, max=49',
+147 silly registry.get     connection: 'Keep-Alive' } ]
+148 silly addNameRange number 2 { name: 'underscore',
+148 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+148 silly addNameRange   hasData: true }
+149 silly addNameRange versions [ 'underscore',
+149 silly addNameRange   [ '1.0.3',
+149 silly addNameRange     '1.0.4',
+149 silly addNameRange     '1.1.0',
+149 silly addNameRange     '1.1.1',
+149 silly addNameRange     '1.1.2',
+149 silly addNameRange     '1.1.3',
+149 silly addNameRange     '1.1.4',
+149 silly addNameRange     '1.1.5',
+149 silly addNameRange     '1.1.6',
+149 silly addNameRange     '1.1.7',
+149 silly addNameRange     '1.2.0',
+149 silly addNameRange     '1.2.1',
+149 silly addNameRange     '1.2.2',
+149 silly addNameRange     '1.2.3',
+149 silly addNameRange     '1.2.4',
+149 silly addNameRange     '1.3.0',
+149 silly addNameRange     '1.3.1',
+149 silly addNameRange     '1.3.2',
+149 silly addNameRange     '1.3.3',
+149 silly addNameRange     '1.4.0',
+149 silly addNameRange     '1.4.1',
+149 silly addNameRange     '1.4.2',
+149 silly addNameRange     '1.4.3',
+149 silly addNameRange     '1.4.4',
+149 silly addNameRange     '1.5.0',
+149 silly addNameRange     '1.5.1',
+149 silly addNameRange     '1.5.2',
+149 silly addNameRange     '1.6.0',
+149 silly addNameRange     '1.7.0' ] ]
+150 verbose addNamed [ 'underscore', '1.6.0' ]
+151 verbose addNamed [ '1.6.0', '1.6.0' ]
+152 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+153 verbose lock underscore@1.6.0 /Users/renerodriguez/.npm/96960ed1-underscore-1-6-0.lock
+154 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+155 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz /Users/renerodriguez/.npm/a02bf4de--underscore-underscore-1-6-0-tgz.lock
+156 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz',
+156 verbose addRemoteTarball   '8b38b10cacdef63337b8b24e4ff86d45aea529a8' ]
+157 info retry fetch attempt 1 at 16:18:34
+158 verbose fetch to= /var/folders/6w/n98zn4k15ml6ctzt3dc3085h0000gn/T/npm-11873-kIK110-Z/registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+159 http GET https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+160 http 200 https://registry.npmjs.org/jshint
+161 silly registry.get cb [ 200,
+161 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+161 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+161 silly registry.get     etag: '"DGSSVXOW3PLD5WBEGT7LWDXEH"',
+161 silly registry.get     'content-type': 'application/json',
+161 silly registry.get     'cache-control': 'max-age=60',
+161 silly registry.get     'content-length': '90838',
+161 silly registry.get     'accept-ranges': 'bytes',
+161 silly registry.get     via: '1.1 varnish',
+161 silly registry.get     age: '28',
+161 silly registry.get     'x-served-by': 'cache-sjc3122-SJC',
+161 silly registry.get     'x-cache': 'HIT',
+161 silly registry.get     'x-cache-hits': '1',
+161 silly registry.get     'x-timer': 'S1422404314.352290,VS0,VE0',
+161 silly registry.get     vary: 'Accept',
+161 silly registry.get     'keep-alive': 'timeout=10, max=50',
+161 silly registry.get     connection: 'Keep-Alive' } ]
+162 silly addNameRange number 2 { name: 'jshint', range: '>=2.5.8-0 <3.0.0-0', hasData: true }
+163 silly addNameRange versions [ 'jshint',
+163 silly addNameRange   [ '0.1.8',
+163 silly addNameRange     '0.1.9',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.2.2',
+163 silly addNameRange     '0.2.3',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '0.4.0',
+163 silly addNameRange     '0.5.0',
+163 silly addNameRange     '0.5.1',
+163 silly addNameRange     '0.5.2',
+163 silly addNameRange     '0.5.3',
+163 silly addNameRange     '0.5.4',
+163 silly addNameRange     '0.5.5',
+163 silly addNameRange     '0.5.6',
+163 silly addNameRange     '0.5.7',
+163 silly addNameRange     '0.5.8',
+163 silly addNameRange     '0.5.9',
+163 silly addNameRange     '0.6.0',
+163 silly addNameRange     '0.6.1',
+163 silly addNameRange     '0.6.2',
+163 silly addNameRange     '0.6.3',
+163 silly addNameRange     '0.7.0',
+163 silly addNameRange     '0.7.1',
+163 silly addNameRange     '0.7.2',
+163 silly addNameRange     '0.7.3',
+163 silly addNameRange     '0.8.0',
+163 silly addNameRange     '0.8.1',
+163 silly addNameRange     '0.8.2',
+163 silly addNameRange     '0.9.0',
+163 silly addNameRange     '0.9.1',
+163 silly addNameRange     '1.0.0',
+163 silly addNameRange     '1.1.0',
+163 silly addNameRange     '2.0.0',
+163 silly addNameRange     '2.0.1',
+163 silly addNameRange     '2.1.0',
+163 silly addNameRange     '2.1.1',
+163 silly addNameRange     '2.1.2',
+163 silly addNameRange     '2.1.3',
+163 silly addNameRange     '2.1.4',
+163 silly addNameRange     '2.1.5',
+163 silly addNameRange     '2.1.6',
+163 silly addNameRange     '2.1.7',
+163 silly addNameRange     '2.1.8',
+163 silly addNameRange     '2.1.9',
+163 silly addNameRange     '2.1.10',
+163 silly addNameRange     '2.1.11',
+163 silly addNameRange     '2.2.0',
+163 silly addNameRange     '2.3.0',
+163 silly addNameRange     '2.4.0',
+163 silly addNameRange     '2.4.1',
+163 silly addNameRange     '2.4.2',
+163 silly addNameRange     '2.4.3',
+163 silly addNameRange     '2.4.4',
+163 silly addNameRange     '2.5.0',
+163 silly addNameRange     '2.5.1',
+163 silly addNameRange     '2.5.2',
+163 silly addNameRange     '2.5.3',
+163 silly addNameRange     '2.5.4',
+163 silly addNameRange     '2.5.5',
+163 silly addNameRange     '2.5.6',
+163 silly addNameRange     '2.5.7',
+163 silly addNameRange     '2.5.8',
+163 silly addNameRange     '2.5.9',
+163 silly addNameRange     '2.5.10',
+163 silly addNameRange     '2.5.11',
+163 silly addNameRange     '2.6.0' ] ]
+164 verbose addNamed [ 'jshint', '2.6.0' ]
+165 verbose addNamed [ '2.6.0', '2.6.0' ]
+166 silly lockFile 27126dd9-jshint-2-6-0 jshint@2.6.0
+167 verbose lock jshint@2.6.0 /Users/renerodriguez/.npm/27126dd9-jshint-2-6-0.lock
+168 silly lockFile b1e51722-pmjs-org-jshint-jshint-2-6-0-tgz https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+169 verbose lock https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz /Users/renerodriguez/.npm/b1e51722-pmjs-org-jshint-jshint-2-6-0-tgz.lock
+170 verbose addRemoteTarball [ 'https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz',
+170 verbose addRemoteTarball   '04e59d04da83aa32301d89115628274871597f33' ]
+171 http 200 https://registry.npmjs.org/tape
+172 silly registry.get cb [ 200,
+172 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+172 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+172 silly registry.get     etag: '"38BWQ5WF0LLSCS07USGW80YZ3"',
+172 silly registry.get     'content-type': 'application/json',
+172 silly registry.get     'cache-control': 'max-age=60',
+172 silly registry.get     'content-length': '106848',
+172 silly registry.get     'accept-ranges': 'bytes',
+172 silly registry.get     via: '1.1 varnish',
+172 silly registry.get     age: '46',
+172 silly registry.get     'x-served-by': 'cache-sjc3123-SJC',
+172 silly registry.get     'x-cache': 'HIT',
+172 silly registry.get     'x-cache-hits': '1',
+172 silly registry.get     'x-timer': 'S1422404314.352942,VS0,VE0',
+172 silly registry.get     vary: 'Accept',
+172 silly registry.get     'keep-alive': 'timeout=10, max=50',
+172 silly registry.get     connection: 'Keep-Alive' } ]
+173 info retry fetch attempt 1 at 16:18:34
+174 verbose fetch to= /var/folders/6w/n98zn4k15ml6ctzt3dc3085h0000gn/T/npm-11873-kIK110-Z/registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+175 http GET https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+176 silly addNameRange number 2 { name: 'tape', range: '>=3.0.3-0 <4.0.0-0', hasData: true }
+177 silly addNameRange versions [ 'tape',
+177 silly addNameRange   [ '0.0.0',
+177 silly addNameRange     '0.0.1',
+177 silly addNameRange     '0.0.2',
+177 silly addNameRange     '0.0.3',
+177 silly addNameRange     '0.0.4',
+177 silly addNameRange     '0.0.5',
+177 silly addNameRange     '0.1.0',
+177 silly addNameRange     '0.1.1',
+177 silly addNameRange     '0.1.2',
+177 silly addNameRange     '0.1.3',
+177 silly addNameRange     '0.1.4',
+177 silly addNameRange     '0.1.5',
+177 silly addNameRange     '0.2.0',
+177 silly addNameRange     '0.2.1',
+177 silly addNameRange     '0.2.2',
+177 silly addNameRange     '0.3.0',
+177 silly addNameRange     '0.3.1',
+177 silly addNameRange     '0.3.2',
+177 silly addNameRange     '0.3.3',
+177 silly addNameRange     '1.0.0',
+177 silly addNameRange     '1.0.1',
+177 silly addNameRange     '1.0.2',
+177 silly addNameRange     '1.0.3',
+177 silly addNameRange     '1.0.4',
+177 silly addNameRange     '1.1.0',
+177 silly addNameRange     '1.1.1',
+177 silly addNameRange     '2.0.0',
+177 silly addNameRange     '2.0.1',
+177 silly addNameRange     '2.1.0',
+177 silly addNameRange     '2.2.0',
+177 silly addNameRange     '2.2.1',
+177 silly addNameRange     '2.3.0',
+177 silly addNameRange     '2.3.1',
+177 silly addNameRange     '2.3.2',
+177 silly addNameRange     '2.4.0',
+177 silly addNameRange     '2.4.1',
+177 silly addNameRange     '2.4.2',
+177 silly addNameRange     '2.5.0',
+177 silly addNameRange     '2.6.0',
+177 silly addNameRange     '2.7.0',
+177 silly addNameRange     '2.7.1',
+177 silly addNameRange     '2.7.2',
+177 silly addNameRange     '2.8.0',
+177 silly addNameRange     '2.9.0',
+177 silly addNameRange     '2.10.0',
+177 silly addNameRange     '2.10.1',
+177 silly addNameRange     '2.10.2',
+177 silly addNameRange     '2.11.0',
+177 silly addNameRange     '2.12.0',
+177 silly addNameRange     '2.12.1',
+177 silly addNameRange     '2.0.2',
+177 silly addNameRange     '2.1.1',
+177 silly addNameRange     '2.2.2',
+177 silly addNameRange     '2.3.3',
+177 silly addNameRange     '2.4.3',
+177 silly addNameRange     '2.5.1',
+177 silly addNameRange     '2.6.1',
+177 silly addNameRange     '2.7.3',
+177 silly addNameRange     '2.8.1',
+177 silly addNameRange     '2.9.1',
+177 silly addNameRange     '2.10.3',
+177 silly addNameRange     '2.11.1',
+177 silly addNameRange     '2.12.2',
+177 silly addNameRange     '2.12.3',
+177 silly addNameRange     '2.13.0',
+177 silly addNameRange     '2.13.1',
+177 silly addNameRange     '2.13.2',
+177 silly addNameRange     '2.13.3',
+177 silly addNameRange     '2.13.4',
+177 silly addNameRange     '2.14.0',
+177 silly addNameRange     '3.0.0',
+177 silly addNameRange     '3.0.1',
+177 silly addNameRange     '3.0.2',
+177 silly addNameRange     '3.0.3',
+177 silly addNameRange     '3.1.0',
+177 silly addNameRange     '3.2.0',
+177 silly addNameRange     '3.3.0',
+177 silly addNameRange     '3.4.0' ] ]
+178 verbose addNamed [ 'tape', '3.4.0' ]
+179 verbose addNamed [ '3.4.0', '3.4.0' ]
+180 silly lockFile b443adc8-tape-3-4-0 tape@3.4.0
+181 verbose lock tape@3.4.0 /Users/renerodriguez/.npm/b443adc8-tape-3-4-0.lock
+182 silly lockFile 0cfffeea-ry-npmjs-org-tape-tape-3-4-0-tgz https://registry.npmjs.org/tape/-/tape-3.4.0.tgz
+183 verbose lock https://registry.npmjs.org/tape/-/tape-3.4.0.tgz /Users/renerodriguez/.npm/0cfffeea-ry-npmjs-org-tape-tape-3-4-0-tgz.lock
+184 verbose addRemoteTarball [ 'https://registry.npmjs.org/tape/-/tape-3.4.0.tgz',
+184 verbose addRemoteTarball   '764bb2c54cab364fdc97d38064929fdd7edc8c12' ]
+185 info retry fetch attempt 1 at 16:18:34
+186 verbose fetch to= /var/folders/6w/n98zn4k15ml6ctzt3dc3085h0000gn/T/npm-11873-kIK110-Z/registry.npmjs.org/tape/-/tape-3.4.0.tgz
+187 http GET https://registry.npmjs.org/tape/-/tape-3.4.0.tgz
+188 http 200 https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+189 silly lockFile eb661706-ry-npmjs-org-btoa-btoa-1-1-2-tgz https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+190 silly lockFile eb661706-ry-npmjs-org-btoa-btoa-1-1-2-tgz https://registry.npmjs.org/btoa/-/btoa-1.1.2.tgz
+191 silly lockFile f1235312-btoa-1-1-2 btoa@1.1.2
+192 silly lockFile f1235312-btoa-1-1-2 btoa@1.1.2
+193 silly lockFile 6bc717ae-btoa-1-1-2 btoa@^1.1.2
+194 silly lockFile 6bc717ae-btoa-1-1-2 btoa@^1.1.2
+195 http 200 https://registry.npmjs.org/atob
+196 silly registry.get cb [ 200,
+196 silly registry.get   { date: 'Wed, 28 Jan 2015 00:18:34 GMT',
+196 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+196 silly registry.get     etag: '"6JF8PGPD32OZ3KW2GDASEJNBV"',
+196 silly registry.get     'content-type': 'application/json',
+196 silly registry.get     'cache-control': 'max-age=60',
+196 silly registry.get     'content-length': '5016',
+196 silly registry.get     'accept-ranges': 'bytes',
+196 silly registry.get     via: '1.1 varnish',
+196 silly registry.get     age: '0',
+196 silly registry.get     'x-served-by': 'cache-sjc3131-SJC',
+196 silly registry.get     'x-cache': 'HIT',
+196 silly registry.get     'x-cache-hits': '1',
+196 silly registry.get     'x-timer': 'S1422404314.355288,VS0,VE152',
+196 silly registry.get     vary: 'Accept',
+196 silly registry.get     'keep-alive': 'timeout=10, max=50',
+196 silly registry.get     connection: 'Keep-Alive' } ]
+197 silly addNameRange number 2 { name: 'atob', range: '>=1.1.2-0 <2.0.0-0', hasData: true }
+198 silly addNameRange versions [ 'atob', [ '1.0.0', '1.0.1', '1.1.0', '1.1.2' ] ]
+199 verbose addNamed [ 'atob', '1.1.2' ]
+200 verbose addNamed [ '1.1.2', '1.1.2' ]
+201 silly lockFile 4e2b9903-atob-1-1-2 atob@1.1.2
+202 verbose lock atob@1.1.2 /Users/renerodriguez/.npm/4e2b9903-atob-1-1-2.lock
+203 http 200 https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+204 silly lockFile a69ec2bf-ry-npmjs-org-atob-atob-1-1-2-tgz https://registry.npmjs.org/atob/-/atob-1.1.2.tgz
+205 verbose lock https://registry.npmjs.org/atob/-/atob-1.1.2.tgz /Users/renerodriguez/.npm/a69ec2bf-ry-npmjs-org-atob-atob-1-1-2-tgz.lock
+206 verbose addRemoteTarball [ 'https://registry.npmjs.org/atob/-/atob-1.1.2.tgz',
+206 verbose addRemoteTarball   'f7f25136b67b48250f8ceb3bf709e5428c11db54' ]
+207 info retry fetch attempt 1 at 16:18:34
+208 verbose fetch to= /var/folders/6w/n98zn4k15ml6ctzt3dc3085h0000gn/T/npm-11873-kIK110-Z/registry.npmjs.org/atob/-/atob-1.1.2.tgz
+209 http GET https://registry.npmjs.org/atob/-/atob-1.1.2.tgz
+210 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+211 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+212 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+213 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+214 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+215 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+216 http 200 https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+217 http 200 https://registry.npmjs.org/tape/-/tape-3.4.0.tgz
+218 silly lockFile 0cfffeea-ry-npmjs-org-tape-tape-3-4-0-tgz https://registry.npmjs.org/tape/-/tape-3.4.0.tgz
+219 silly lockFile 0cfffeea-ry-npmjs-org-tape-tape-3-4-0-tgz https://registry.npmjs.org/tape/-/tape-3.4.0.tgz
+220 silly lockFile b443adc8-tape-3-4-0 tape@3.4.0
+221 silly lockFile b443adc8-tape-3-4-0 tape@3.4.0
+222 silly lockFile dfc2fec7-tape-3-0-3 tape@^3.0.3
+223 silly lockFile dfc2fec7-tape-3-0-3 tape@^3.0.3
+224 http 200 https://registry.npmjs.org/atob/-/atob-1.1.2.tgz
+225 silly lockFile a69ec2bf-ry-npmjs-org-atob-atob-1-1-2-tgz https://registry.npmjs.org/atob/-/atob-1.1.2.tgz
+226 silly lockFile a69ec2bf-ry-npmjs-org-atob-atob-1-1-2-tgz https://registry.npmjs.org/atob/-/atob-1.1.2.tgz
+227 silly lockFile 4e2b9903-atob-1-1-2 atob@1.1.2
+228 silly lockFile 4e2b9903-atob-1-1-2 atob@1.1.2
+229 silly lockFile 5e8cb7ad-atob-1-1-2 atob@^1.1.2
+230 silly lockFile 5e8cb7ad-atob-1-1-2 atob@^1.1.2
+231 silly lockFile b1e51722-pmjs-org-jshint-jshint-2-6-0-tgz https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+232 silly lockFile b1e51722-pmjs-org-jshint-jshint-2-6-0-tgz https://registry.npmjs.org/jshint/-/jshint-2.6.0.tgz
+233 silly lockFile 27126dd9-jshint-2-6-0 jshint@2.6.0
+234 silly lockFile 27126dd9-jshint-2-6-0 jshint@2.6.0
+235 silly lockFile c93a3f0f-jshint-2-5-8 jshint@^2.5.8
+236 silly lockFile c93a3f0f-jshint-2-5-8 jshint@^2.5.8
+237 error Error: EACCES, mkdir '/Users/renerodriguez/.npm/underscore/1.6.0'
+237 error  { [Error: EACCES, mkdir '/Users/renerodriguez/.npm/underscore/1.6.0']
+237 error   errno: 3,
+237 error   code: 'EACCES',
+237 error   path: '/Users/renerodriguez/.npm/underscore/1.6.0',
+237 error   parent: 'github-api' }
+238 error Please try running this command again as root/Administrator.
+239 error System Darwin 14.0.0
+240 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+241 error cwd /Users/renerodriguez/Sites/arabAPI
+242 error node -v v0.10.33
+243 error npm -v 1.4.28
+244 error path /Users/renerodriguez/.npm/underscore/1.6.0
+245 error code EACCES
+246 error errno 3
+247 error stack Error: EACCES, mkdir '/Users/renerodriguez/.npm/underscore/1.6.0'
+248 verbose exit [ 3, true ]

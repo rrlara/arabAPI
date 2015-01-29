@@ -55,15 +55,7 @@ var GithubSync = function () {
         this.repo.getBlob(shaID, function (err, data) {
             console.log("[data] = ", data);
         });
-
     }
-
-//Reads the RAW file from Github
-//    this.readRawPostMD = function (path) {
-//        this.repo.read(this.congfigSettings.BRANCH, path, function (err, data) {
-//            console.log("[read] = ", data);
-//        });
-//    }
 
 //writes the RAW file from postObject github
     this.writeFileToGithub = function (title, content) {
@@ -80,6 +72,16 @@ var GithubSync = function () {
 
     }
 
+    this.deleteFile = function (path){
+        this.repo.delete(this.congfigSettings.BRANCH, path, function(err) {
+            if (err) {
+                console.log("something went wroong");
+            } else {
+                console.log("Deleted = ", path);
+            }
+        });
+    }
+
 //this.writeFileToGithub(GithubSync.mockPost.title, GithubSync.mockPost.content)
 
     this.formatTitle = function (text) {
@@ -87,7 +89,8 @@ var GithubSync = function () {
 
         var year = d.getFullYear();
         var month = ("0" + (d.getMonth() + 1)).slice(-2);
-        var day = ("0" + (d.getDay() + 1)).slice(-2);
+//        var day = ("0" + (d.getDay() + 1)).slice(-2);
+        var day = d.getDate();
 
         var postStampDate = year + " " + month + " " + day;
 
@@ -112,14 +115,14 @@ var GithubSync = function () {
         }
 
         var YAML_FRONT_MATTER = '---\n' +
-            'layout: ' + mockPost.layout + '\n' +
-            'published: ' + mockPost.published + '\n' +
+            'layout: ' + this.mockPost.layout + '\n' +
+            'published: ' + this.mockPost.published + '\n' +
             'title: %title\n' +
-            'category: ' + mockPost.category + '\n' +
-            'language: ' + mockPost.language + '\n' +
-            'comments: ' + mockPost.comments + '\n' +
-            'splash: ' + mockPost.splash + '\n' +
-            'tags: ' + postArrays(mockPost.tags) + '\n' +
+            'category: ' + this.mockPost.category + '\n' +
+            'language: ' + this.mockPost.language + '\n' +
+            'comments: ' + this.mockPost.comments + '\n' +
+            'splash: ' + this.mockPost.splash + '\n' +
+            'tags: ' + postArrays(this.mockPost.tags) + '\n' +
             '---\n\n';
         return YAML_FRONT_MATTER;
     }

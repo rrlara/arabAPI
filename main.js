@@ -16,7 +16,7 @@ var GithubSync = function () {
     this.mockPost = {
         layout: "blog",
         published: "true",
-        title: "english Orale blog",
+        title: "english blog post",
         category: "blog",
         language: "english",
         comments: "true",
@@ -42,9 +42,9 @@ var GithubSync = function () {
             var readPostMD = contents[0].path;
             console.log(contents);
 
-            self.getRawPostMD(shaID);
+//            self.getRawPostMD(shaID);
 
-            self.readRawPostMD(readPostMD);
+//            self.readRawPostMD(readPostMD);
 
 
         });
@@ -59,11 +59,11 @@ var GithubSync = function () {
     }
 
 //Reads the RAW file from Github
-    this.readRawPostMD = function (path) {
-        this.repo.read(this.congfigSettings.BRANCH, path, function (err, data) {
-            console.log("[read] = ", data);
-        });
-    }
+//    this.readRawPostMD = function (path) {
+//        this.repo.read(this.congfigSettings.BRANCH, path, function (err, data) {
+//            console.log("[read] = ", data);
+//        });
+//    }
 
 //writes the RAW file from postObject github
     this.writeFileToGithub = function (title, content) {
@@ -86,8 +86,8 @@ var GithubSync = function () {
         var d = new Date();
 
         var year = d.getFullYear();
-        var month = ("0" + (d.getMonth() + 1)).slice(-2)
-        var day = d.getDay();
+        var month = ("0" + (d.getMonth() + 1)).slice(-2);
+        var day = ("0" + (d.getDay() + 1)).slice(-2);
 
         var postStampDate = year + " " + month + " " + day;
 

@@ -40,21 +40,17 @@ var GithubSync = function () {
     this.getListOfMDFiles = function () {
         var self = this;
         this.repo.contents(this.congfigSettings.BRANCH, this.congfigSettings.PATH, function (err, contents) {
+
+            var contents =  JSON.parse(contents);
             var shaID = contents[0].sha;
             var readPostMD = contents[0].path;
             console.log(contents);
 
 //            self.getRawPostMD(shaID);
 
-//            self.readRawPostMD(readPostMD);
-
 
         });
     }
-
-//    this.deleteFilePost = function (path){
-//
-//    }
 
 //Reads the RAW data from Github
     this.getRawPostMD = function (shaID) {
@@ -71,34 +67,23 @@ var GithubSync = function () {
             if (err) {
                 console.log("something went wroong");
             } else {
-                console.log("cool");
+                console.log("[Create] = " + title + ".md");
             }
 
         });
 
     }
 
-//    var path = "_posts/blog/2015-01-28-date23.md";
 
-    this.getShaPost = function (){
-        this.repo.getSha(this.congfigSettings.PATH, "_posts/blog/2015-01-28-date23.md", function(err, sha){
+    this.deleteFile = function (path){
+//        console.log(path);
+        this.repo.delete(this.congfigSettings.BRANCH, path, function(err) {
             if (err) {
                 console.log("something went wroong");
             } else {
-                console.log("sha = " + sha);
+                console.log("Deleted = ", path);
             }
-        });
-    }
 
-    this.deleteFile = function (filename){
-        console.log(filename);
-        this.repo.delete(this.congfigSettings.BRANCH, this.congfigSettings.PATH + "/" + filename, function(err) {
-//            if (err) {
-//                console.log("something went wroong");
-//            } else {
-//                console.log("Deleted = ");
-//            }
-            console.log(err);
         });
     }
 
@@ -156,7 +141,7 @@ var GithubSync = function () {
             filename: filename + '.md',
             body: yaml + data
         };
-        console.log("[post] = ", post);
+//        console.log("[post] = ", post);
 
         return post;
     }

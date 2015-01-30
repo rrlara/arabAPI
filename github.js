@@ -41,7 +41,9 @@
     function _request(method, path, data, cb, raw, sync) {
       function getURL() {
         var url = path.indexOf('//') >= 0 ? path : API_URL + path;
-        return url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime();
+//        return url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime();
+          var myURL = url + ((/\?/).test(url) ? "&" : "?") + (new Date()).getTime();
+          return myURL;
       }
 
       var xhr = new XMLHttpRequest();

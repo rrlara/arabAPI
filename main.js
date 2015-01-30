@@ -16,7 +16,7 @@ var GithubSync = function () {
     this.mockPost = {
         layout: "blog",
         published: "true",
-        title: "english blog post",
+        title: "TEST english blog post",
         category: "blog",
         language: "english",
         comments: "true",
@@ -24,7 +24,9 @@ var GithubSync = function () {
         author: "Perry",
         affiliation: "IFPRI",
         splash: "https://farm8.staticflickr.com/7498/16147010630_f59f6a7f00_o.jpg",
-        content: "Poverty in the Middle East and North Africa (MENA) is largely a rural phenomenon."
+        youtubeid: "",
+        content: "Poverty in the Middle East and North Africa (MENA) is largely a rural phenomenon.",
+        commitmsg: ""
     }
 
     this.github = new Github({
@@ -50,6 +52,10 @@ var GithubSync = function () {
         });
     }
 
+//    this.deleteFilePost = function (path){
+//
+//    }
+
 //Reads the RAW data from Github
     this.getRawPostMD = function (shaID) {
         this.repo.getBlob(shaID, function (err, data) {
@@ -72,13 +78,27 @@ var GithubSync = function () {
 
     }
 
-    this.deleteFile = function (path){
-        this.repo.delete(this.congfigSettings.BRANCH, path, function(err) {
+//    var path = "_posts/blog/2015-01-28-date23.md";
+
+    this.getShaPost = function (){
+        this.repo.getSha(this.congfigSettings.PATH, "_posts/blog/2015-01-28-date23.md", function(err, sha){
             if (err) {
                 console.log("something went wroong");
             } else {
-                console.log("Deleted = ", path);
+                console.log("sha = " + sha);
             }
+        });
+    }
+
+    this.deleteFile = function (filename){
+        console.log(filename);
+        this.repo.delete(this.congfigSettings.BRANCH, this.congfigSettings.PATH + "/" + filename, function(err) {
+//            if (err) {
+//                console.log("something went wroong");
+//            } else {
+//                console.log("Deleted = ");
+//            }
+            console.log(err);
         });
     }
 
